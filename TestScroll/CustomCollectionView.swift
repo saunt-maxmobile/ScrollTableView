@@ -89,7 +89,6 @@ struct CustomCollectionView
     }
     
     func updateUIViewController(_ uiViewController: ViewController, context: Context) {
-        print("total image in device: \(collections.count)")
         context.coordinator.viewController?.collectionView.reloadData()
     }
 }
