@@ -106,9 +106,16 @@ struct HorizontalCollectionView: View {
                         .cornerRadius(8)
                         .id(sections[index].title)
                         .onTapGesture {
+//                            selectSection = true
+//                            selectedIndex = index
+//                            withAnimation {
+//                                scrollProxy.scrollTo(sections[index].title, anchor: .center)
+//                            }
                             selectSection = true
-                            selectedIndex = index
                             withAnimation {
+                                
+                                selectedIndex = index
+                                
                                 scrollProxy.scrollTo(sections[index].title, anchor: .center)
                             }
                         }

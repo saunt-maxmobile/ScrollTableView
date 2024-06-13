@@ -9,5 +9,5 @@ import Foundation
 
 protocol SectionData: Identifiable {
     associatedtype Item
-    var details: [Item] { get }
+    var themes: [Item] { get }
 }
